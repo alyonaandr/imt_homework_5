@@ -1,0 +1,76 @@
+.cta-block{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: left;
+    border-radius: 0.3rem;
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.56);
+    color: #007bff;
+}
+hr{
+    border-top: 1px solid rgb(0, 123, 255);
+}
+.catalog .catalog-item a{
+    cursor: pointer;
+}
+.catalog .catalog-item:nth-of-type(3n+1) img{
+	clip-path: polygon(0% 30%, 0% 0%, 30% 0%, 70% 0%, 100% 0%, 100% 30%, 100% 100%, 70% 100%, 70% 100%, 30% 100%, 0% 100%, 0% 70%);
+	-webkit-clip-path: polygon(0% 30%, 0% 0%, 30% 0%, 70% 0%, 100% 0%, 100% 30%, 100% 100%, 70% 100%, 70% 100%, 30% 100%, 0% 100%, 0% 70%);
+	transition: clip-path 0.35s;
+    transition: -webkit-clip-path 0.35s;
+}
+
+.catalog .catalog-item:nth-of-type(3n+2) img{
+	clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 57%, 0% 35%, 0% 0%);
+    transition: clip-path 0.35s;
+    transition: -webkit-clip-path 0.35s;
+}
+
+.catalog .catalog-item:nth-of-type(3n+3) img{
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 21%, 100% 0, 45% 0%);
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 21%, 100% 0, 45% 0%);
+    transition: clip-path 0.35s;
+    transition: -webkit-clip-path 0.35s;
+}
+
+.catalog .catalog-item:nth-of-type(3n+1):hover img{
+	clip-path: polygon(0 30%, 30% 30%, 30% 0, 70% 0, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0 70%);
+	-webkit-clip-path: polygon(0 30%, 30% 30%, 30% 0, 70% 0, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0 70%);
+}
+
+.catalog .catalog-item:nth-of-type(3n+2):hover img{
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.catalog .catalog-item:nth-of-type(3n+3):hover img{
+    clip-path: polygon(24% 34%, 10% 56%, 46% 100%, 100% 21%, 85% 0, 45% 60%);
+	-webkit-clip-path: polygon(23% 36%, 10% 56%, 46% 100%, 100% 21%, 85% 0, 45% 60%);
+}
+
+.counter__product-item {
+	width: 48%;
+	text-align: center;
+	min-height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeeeee;
+}
+
+.counter__product-item p{
+	margin: 0;
+}
+
+.btn-outline-success {
+	color: #007bff;
+	border-color: #007bff;
+}
+
+.btn-outline-success:hover {
+	color: #ffffff;
+	border-color: #007bff;
+	background-color: #007bff;
+}
